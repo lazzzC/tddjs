@@ -39,3 +39,28 @@ $ cat package.json
   "license": "ISC"
 }
 ```
+Canary test
+```javascript
+// sample/test/util_test.js
+var expect = require('chai').expect;
+
+describe('util tests', function() {
+  it("should pass this canary test", function() {
+    expect(true).to.eql(true);
+  });
+});
+```
+```shell
+$ npm test
+> sample@1.0.0 test /Users/charlotte/VersionControls/tddjs/sample
+> mocha
+
+
+
+  util tests
+    ✓ should pass this canary test
+
+
+  1 passing (8ms)
+  ```
+  Further Test...
