@@ -8,9 +8,7 @@ $ npm --version
 ```
 Create sample project
 ```shell
-$ mkdir -p tddjs/sample
 $ cd tddjs/sample
-$ mkdir src test
 ```
 
 Initial project
@@ -41,7 +39,7 @@ $ cat package.json
 ```
 Canary test
 ```javascript
-// sample/test/util_test.js
+// tdd/sample/test/util_test.js
 var expect = require('chai').expect;
 
 describe('util tests', function() {
